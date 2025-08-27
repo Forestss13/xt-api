@@ -164,10 +164,10 @@ const showLastUpdate = process.env.DOCUSAURUS_CURRENT_LOCALE === defaultLocale;
 
 export default async function createConfigAsync() {
   return {
-    title: 'Docusaurus',
+    title: 'XT API',
     tagline: getLocalizedConfigValue('tagline'),
     organizationName: 'facebook',
-    projectName: 'docusaurus',
+    projectName: 'XT API',
     baseUrl,
     baseUrlIssueBanner: true,
     url: 'https://docusaurus.io',
@@ -675,33 +675,37 @@ export default async function createConfigAsync() {
         },
         items: [
           {
-            type: 'doc',
+            type: 'dropdown',
             position: 'left',
-            docId: 'introduction',
-            label: 'Docs',
+            label: '导航菜单',
+            items: [
+              {
+                type: 'doc',
+                docId: 'introduction',
+                label: 'Docs',
+              },
+              {
+                type: 'docSidebar',
+                sidebarId: 'api',
+                label: 'API',
+              },
+              {to: 'blog', label: 'Blog'},
+              {to: 'showcase', label: 'Showcase'},
+              {
+                to: '/community/support',
+                label: 'Community',
+                activeBaseRegex: `/community/`,
+              },
+              // This item links to a draft doc: only displayed in dev
+              {
+                type: 'doc',
+                docId: 'index',
+                label: 'Tests',
+                docsPluginId: 'docs-tests',
+              },
+              isDev && {to: '/__docusaurus/debug', label: 'Debug'},
+            ].filter(Boolean),
           },
-          {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: 'api',
-            label: 'API',
-          },
-          {to: 'blog', label: 'Blog', position: 'left'},
-          {to: 'showcase', label: 'Showcase', position: 'left'},
-          {
-            to: '/community/support',
-            label: 'Community',
-            position: 'left',
-            activeBaseRegex: `/community/`,
-          },
-          // This item links to a draft doc: only displayed in dev
-          {
-            type: 'doc',
-            docId: 'index',
-            label: 'Tests',
-            docsPluginId: 'docs-tests',
-          },
-          isDev && {to: '/__docusaurus/debug', label: 'Debug'},
           // Custom item for dogfooding: only displayed in /tests/ routes
           {
             type: 'custom-dogfood-navbar-item',
