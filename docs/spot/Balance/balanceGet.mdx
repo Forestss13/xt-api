@@ -1,0 +1,32 @@
+---
+id: FrequencyLimitingRules
+title: Frequency Limiting Rules
+sidebar_label: Frequency Limiting Rules
+sidebar_position: 3
+---
+
+**Type:** GET
+
+**Description:** Frequency limiting rules for API requests.
+
+### Rules
+
+- Get assets: **3 times per second per user**
+- Other methods: **10 times per second per user**
+- Limit: **1000 times per minute per IP**
+
+If the request frequency exceeds the limit, the account will be **locked for 10 minutes**.
+
+### Response Example
+
+```json title="Response"
+{
+  "rc": 429,
+  "mc": "Too Many Requests",
+  "ma": [],
+  "result": {
+    "locked": true,
+    "lockDuration": "10m"
+  }
+}
+```

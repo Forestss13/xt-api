@@ -1,0 +1,37 @@
+---
+id: Alter Margin
+title: Alter Margin
+sidebar_label: Alter Margin
+sidebar_position: 10
+---
+
+**Type** POST
+
+**Description:** `/future/user/v1/position/margin`
+
+**Parameters**
+
+| Name | Type | Mandatory | Default | Description |
+| --- | --- | --- | --- | --- |
+| symbol | string | Yes | N/A | Trading pair |
+| margin | number | No | N/A | Quantity |
+| positionSide | string | No | N/A | Position side (LONG, SHORT) |
+| type | string | No | N/A | Adjust direction (ADD: add isolated margin, SUB: reduce isolated margin) |
+
+### Limit Flow Rules
+
+200/s/apikey
+
+### Response Example
+
+```json title="Response"
+{
+  "error": {
+    "code": "",
+    "msg": ""
+  },
+  "msgInfo": "",
+  "result": {},
+  "returnCode": 0
+}
+```

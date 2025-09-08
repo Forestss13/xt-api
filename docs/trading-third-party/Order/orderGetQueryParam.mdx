@@ -1,0 +1,39 @@
+---
+id: QuerySingleOrder
+title: Query Single Order
+sidebar_label: Query Single Order
+sidebar_position: 1
+description: /spot/v4/order
+---
+
+**Type:** GET
+
+**Description:** `/spot/v4/order`
+
+### Limit Flow Rules
+
+10/s/apikey
+
+### Parameters
+
+| Name            | Type   | Mandatory | Default | Description     |
+| --------------- | ------ | --------- | ------- | --------------- |
+| `orderId`       | number | No        |         | Order ID        |
+| `clientOrderId` | string | No        |         | Client order ID |
+
+### Response Example
+
+```json title="Response"
+{
+  "rc": 0,
+  "mc": "string",
+  "ma": [{}],
+  "result": {
+    "symbol": "BTC_USDT",
+    "orderId": "6216559590087220004",
+    "clientOrderId": "16559590087220001",
+    "baseCurrency": "string",
+    "quoteCurrency": "string",
+    "side": "BUY",             // order side: BUY, SELL
+    "type": "LIMIT",           // order type: LIMIT, MARKET
+```

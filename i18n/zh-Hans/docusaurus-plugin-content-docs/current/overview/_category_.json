@@ -1,0 +1,9 @@
+{
+  "label": "概览",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "API 概览",
+    "description": "XT API 的总体介绍和快速开始指南"
+  }
+}

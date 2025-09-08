@@ -1,0 +1,9 @@
+{
+  "label": "期货交易",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "期货交易 API",
+    "description": "期货交易相关的所有 API 接口文档"
+  }
+}

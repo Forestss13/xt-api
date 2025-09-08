@@ -1,0 +1,9 @@
+{
+  "label": "现货交易",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "title": "现货交易 API",
+    "description": "现货交易相关的所有 API 接口文档"
+  }
+}

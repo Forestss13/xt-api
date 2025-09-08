@@ -1,0 +1,9 @@
+{
+  "label": "跟单交易",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "跟单交易 API",
+    "description": "跟单交易相关的所有 API 接口文档"
+  }
+}

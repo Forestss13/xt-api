@@ -1,0 +1,31 @@
+---
+id: CancelAllTriggerOrders
+title: Cancel All Trigger Orders
+sidebar_label: Cancel All Trigger Orders
+sidebar_position: 3
+---
+
+**Type:** POST
+
+**Description:** `/future/trade/v1/entrust/cancel-all-plan`
+
+**Remark:** Content-Type = application/x-www-form-urlencoded && application/json
+
+### Limit Flow Rules
+
+200/s/apikey
+
+### Parameters
+
+| Name   | Type   | Mandatory | Default | Description                 | Ranges |
+| ------ | ------ | --------- | ------- | --------------------------- | ------ |
+| symbol | string | true      |         | Trading pair. e.g. btc_usdt |        |
+
+### Request Example
+
+```java title="Java"
+public void getKLine() {
+    String text = HttpUtil.get(URL + "/data/api/future/trade/v1/getKLine?market=btc_usdt&type=1min&since=0");
+    System.out.println(text);
+}
+```

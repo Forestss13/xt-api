@@ -1,0 +1,38 @@
+---
+id: AlterStopLimit
+title: Alter Stop Limit
+sidebar_label: Alter Stop Limit
+sidebar_position: 12
+---
+
+**Type:** POST
+
+**Description:** `/future/trade/v1/entrust/update-profit-stop`
+
+**Remark:** Content-Type = application/x-www-form-urlencoded && application/json
+
+### Limit Flow Rules
+
+200/s/apikey
+
+### Parameters
+
+| Name | Type | Mandatory | Default | Description | Ranges |
+| --- | --- | --- | --- | --- | --- |
+| profitId | integer | true | N/A | Stop limit ID |  |
+| triggerProfitPrice | number | false | N/A | TP trigger price |  |
+| triggerStopPrice | number | false | N/A | SL trigger price |  |
+
+### Response Example
+
+```json title="Response"
+{
+  "error": {
+    "code": "",
+    "msg": ""
+  },
+  "msgInfo": "",
+  "result": {},
+  "returnCode": 0
+}
+```

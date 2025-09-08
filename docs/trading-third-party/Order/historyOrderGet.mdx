@@ -1,0 +1,70 @@
+---
+id: Query_historical_orders
+title: Query Historical Orders
+sidebar_label: Query Historical Orders
+sidebar_position: 9
+description: /spot/v4/history-order
+---
+
+**Type:** GET
+
+**Description:** `/spot/v4/history-order`
+
+#### Limit Flow Rules
+
+10/s/apikey
+
+### Parameters
+
+| Name | Type | Mandatory | Default | Description |
+| --- | --- | --- | --- | --- |
+| `symbol` | string | No |  | Trading pair, if not filled in, represents all |
+| `bizType` | string | No |  | SPOT, LEVER |
+| `side` | string | No |  | BUY, SELL |
+| `type` | string | No |  | LIMIT, MARKET |
+| `state` | string | No |  | Order [state](#orderStatus), PARTIALLY_FILLED, FILLED, CANCELED, REJECTED, EXPIRED |
+| `fromId` | number | No |  | Start ID |
+| `direction` | string | No |  | Query direction: PREV, NEXT |
+| `limit` | number | No | 20 | Limit number, max 100 |
+| `startTime` | number | No |  | Example: 1657682804112 |
+| `endTime` | number | No |  | End time |
+| `hiddenCanceled` | boolean | No |  | Whether to hide canceled orders |
+
+### Response Example
+
+```json title="Response"
+{
+  "rc": 0,
+  "mc": "string",
+  "ma": [{}],
+  "result": {
+    "hasPrev": true,
+    "hasNext": true,
+    "items": [
+      {
+        "symbol": "BTC_USDT",
+        "orderId": "6216559590087220004",
+        "clientOrderId": "16559590087220001",
+        "baseCurrency": "string",
+        "quoteCurrency": "string",
+        "side": "BUY",
+        "type": "LIMIT",
+        "timeInForce": "GTC",
+        "price": "40000",
+        "origQty": "2",
+        "origQuoteQty": "48000",
+        "executedQty": "1.2",
+        "leavingQty": "string",
+        "tradeBase": "2",
+        "tradeQuote": "48000",
+        "avgPrice": "42350",
+        "fee": "string",
+        "feeCurrency": "string",
+        "state": "NEW",
+        "time": 1655958915583,
+        "updatedTime": 1655958915583
+      }
+    ]
+  }
+}
+```

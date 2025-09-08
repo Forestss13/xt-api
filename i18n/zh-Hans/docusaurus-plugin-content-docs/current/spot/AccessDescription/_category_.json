@@ -1,0 +1,9 @@
+{
+  "label": "接入说明",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "现货交易 API 接入说明",
+    "description": "现货交易 API 的接入指南和基础信息"
+  }
+}

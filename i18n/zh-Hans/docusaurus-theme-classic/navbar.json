@@ -1,15 +1,51 @@
 {
   "title": {
-    "message": "我的网站",
+    "message": "XT API",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "我的网站标志",
+    "message": "XT API 标志",
     "description": "The alt text of navbar logo"
   },
-  "item.label.Tutorial": {
-    "message": "教程",
-    "description": "Navbar item with label Tutorial"
+  "item.label.Product": {
+    "message": "产品",
+    "description": "Navbar item with label Product"
+  },
+  "item.label.Index": {
+    "message": "指数",
+    "description": "Navbar item with label Index"
+  },
+  "item.label.Spot Trading": {
+    "message": "现货交易",
+    "description": "Navbar item with label Spot Trading"
+  },
+  "item.label.Futures Trading": {
+    "message": "期货交易",
+    "description": "Navbar item with label Futures Trading"
+  },
+  "item.label.Margin Spot": {
+    "message": "杠杆现货",
+    "description": "Navbar item with label Margin Spot"
+  },
+  "item.label.Copy Trading": {
+    "message": "跟单交易",
+    "description": "Navbar item with label Copy Trading"
+  },
+  "item.label.Futures Copy": {
+    "message": "期货跟单",
+    "description": "Navbar item with label Futures Copy"
+  },
+  "item.label.Trading Third Party": {
+    "message": "第三方交易",
+    "description": "Navbar item with label Trading Third Party"
+  },
+  "item.label.User Center": {
+    "message": "用户中心",
+    "description": "Navbar item with label User Center"
+  },
+  "item.label.All Products": {
+    "message": "所有产品",
+    "description": "Navbar item with label All Products"
   },
   "item.label.Blog": {
     "message": "博客",
