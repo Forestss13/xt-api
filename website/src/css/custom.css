@@ -648,20 +648,20 @@ body {
 
 /* 侧边栏文字大小调整 */
 .menu__link {
-  font-size: 14px !important; /* 调整侧边栏链接文字大小 */
+  font-size: 13px !important; /* 调整侧边栏链接文字大小 */
 }
 
 .menu__link--sublist {
-  font-size: 14px !important; /* 调整可展开的侧边栏项目文字大小 */
+  font-size: 13px !important; /* 调整可展开的侧边栏项目文字大小 */
 }
 
 .theme-doc-sidebar-item-category .menu__link {
-  font-size: 14px !important; /* 调整侧边栏分类标题文字大小 */
+  font-size: 13px !important; /* 调整侧边栏分类标题文字大小 */
   font-weight: 600 !important; /* 让分类标题更粗一些 */
 }
 
 .theme-doc-sidebar-item-link .menu__link {
-  font-size: 14px !important; /* 调整侧边栏文档链接文字大小 */
+  font-size: 13px !important; /* 调整侧边栏文档链接文字大小 */
 }
 
 /* 移动端侧边栏文字大小 */
